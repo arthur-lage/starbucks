@@ -12,7 +12,7 @@ Made with HTML, CSS and JavaScript.
 <img src="/assets/Screenshot_5.png" alt="Screenshot 1 - Desktop" />
 <img src="/assets/Screenshot_6.png" alt="Screenshot 2 - Desktop" />
 <div style="display: flex;">
-  <img width="250" src="/assets/Screenshot_3.png" alt="Screenshot 3 - Mobile" />
+  <img width="450" src="/assets/Screenshot_3.png" alt="Screenshot 3 - Mobile" />
   <img width="250" src="/assets/Screenshot_4.png" alt="Screenshot 4 - Mobile" />
 </div>
 
