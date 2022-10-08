@@ -25,6 +25,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 4rem;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.12);
 }
 
 header nav {
@@ -47,7 +48,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  transition: .15s ease;
+  transition: 0.15s ease;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -58,4 +59,230 @@ header nav ul li a:hover {
 header nav .logo img {
   width: 5rem;
   height: 5rem;
+}
+
+header .actions {
+  display: flex;
+  align-items: center;
+}
+
+header .actions .find-store {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 3.75rem;
+}
+
+header .actions .find-store i {
+  font-size: 2.4rem;
+}
+
+header .actions .find-store:hover {
+  color: #006241;
+}
+
+header .actions .find-store:hover i {
+  color: #006241;
+}
+
+header .actions .sign-in {
+  background: transparent;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.75rem 1.75rem;
+  cursor: pointer;
+  border-radius: 50rem;
+  transition: 0.15s ease;
+  border: 1px solid #000;
+  margin-right: 2.5rem;
+}
+
+header .actions .sign-in:hover {
+  background: #dfdfdf;
+}
+
+header .actions .join-now {
+  background: #000;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.75rem 1.75rem;
+  cursor: pointer;
+  border-radius: 50rem;
+  transition: 0.15s ease;
+  border: 0;
+}
+
+header .actions .join-now:hover {
+  background: #555;
+}
+
+main .starbucks-rewards {
+  background: #d4e9e2;
+  display: flex;
+  margin-top: 3rem;
+}
+
+main .starbucks-rewards img {
+  width: 50%;
+}
+
+main .starbucks-rewards .text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: #1e3932;
+  font-weight: 700;
+}
+
+main .starbucks-rewards .text h2 {
+  font-size: 2.4rem;
+}
+
+main .starbucks-rewards .text p {
+  font-size: 1.9rem;
+  line-height: 1.8;
+  max-width: 45rem;
+  font-weight: 500;
+}
+
+main .starbucks-rewards .text .join-now {
+  font-size: 1.5rem;
+  background: #d4e9e2;
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 50rem;
+  transition: 0.15s ease;
+  border: 1px solid #1e3932;
+  color: #1e3932;
+}
+
+main .starbucks-rewards .text .join-now:hover {
+  filter: brightness(0.9);
+}
+
+main .help-community {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  background: #d4e9e2;
+}
+
+main .help-community img {
+  width: 50%;
+}
+
+main .help-community .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: #d4e9e2;
+  color: #1e3932;
+  font-weight: 700;
+  width: 50%;
+  font-family: "Open Sans", sans-serif;
+}
+
+main .help-community .text h2 {
+  font-size: 5rem;
+  max-width: 46rem;
+  letter-spacing: .3rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+main .help-community .text p {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+  max-width: 50rem;
+  font-weight: 500;
+}
+
+main .help-community .text .learn-more {
+  font-size: 1.5rem;
+  background: #d4e9e2;
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 50rem;
+  transition: 0.15s ease;
+  border: 1px solid #1e3932;
+  color: #1e3932;
+}
+
+main .help-community .text .learn-more:hover {
+  filter: brightness(0.9);
+}
+
+main .art-roast {
+  background: #006241;
+  width: 100%;
+  display: flex;
+  margin-top: 3rem;
+}
+
+main .art-roast img {
+  width: 50%;
+}
+
+main .art-roast .text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+main .art-roast .text h2 {
+  font-size: 4.8rem;
+  max-width: 40rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+
+main .art-roast .text p {
+  font-size: 2.4rem;
+  max-width: 50rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+  
+main .art-roast .text .order-now {
+  border: 1px solid #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 50rem;
+  color: #fff;
+  padding: .75rem 1.5rem;
+  cursor: pointer;
+  background: transparent;
+  transition: .15s ease;
+}
+
+main .art-roast .text .order-now:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
