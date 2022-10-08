@@ -22,6 +22,8 @@ a {
 
 header {
   display: flex;
+  background: #fff;
+  height: 10.2rem;
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 4rem;
@@ -136,14 +138,18 @@ main section .text {
   width: 50%;
 }
 
+main section img {
+  width: 50%;
+}
+
+header .mobile-menu {
+  display: none;
+}
+
 main .starbucks-rewards {
   background: #d4e9e2;
   display: flex;
   margin-top: 3rem;
-}
-
-main .starbucks-rewards img {
-  width: 50%;
 }
 
 main .starbucks-rewards .text {
@@ -183,10 +189,6 @@ main .help-community {
   width: 100%;
   display: flex;
   background: #d4e9e2;
-}
-
-main .help-community img {
-  width: 50%;
 }
 
 main .help-community .text {
@@ -232,10 +234,6 @@ main .art-roast {
   width: 100%;
   display: flex;
   margin-top: 3rem;
-}
-
-main .art-roast img {
-  width: 50%;
 }
 
 main .art-roast .text h2 {
@@ -288,19 +286,11 @@ main .nitro-cold-brew .text p {
   margin: 3rem 0;
 }
 
-main .nitro-cold-brew img {
-  width: 50%;
-}
-
 main .protein-packed {
   display: flex;
   width: 100%;
   background: #006241;
   margin-top: 3rem;
-}
-
-main .protein-packed img {
-  width: 50%;
 }
 
 main .protein-packed .text h2 {
@@ -373,10 +363,6 @@ main .latinx-heritage .text .learn-more:hover {
   filter: brightness(0.9);
 }
 
-main .latinx-heritage img {
-  width: 50%;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -417,6 +403,12 @@ footer nav ul {
   font-weight: 500;
 }
 
+footer nav ul span {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 footer nav ul p {
   font-size: 2rem;
 }
@@ -425,9 +417,9 @@ footer nav ul li a {
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.5);
   transition: 0.15s ease;
+  max-width: 20rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  max-width: 20rem;
   display: block;
 }
 
@@ -504,4 +496,416 @@ footer .footer p {
   font-size: 1.5rem;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.58);
+}
+
+header .overlay {
+  display: none;
+}
+
+header .hamburger {
+  display: none;
+}
+
+footer nav ul i {
+  display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  footer nav ul:nth-child(1),
+  footer nav ul:nth-child(2),
+  footer nav ul:nth-child(3),
+  footer nav ul:nth-child(4),
+  footer nav ul:nth-child(5) {
+    margin-right: 3.4rem;
+  }
+  
+  main .help-community .text h2 {
+    max-width: 100%;
+    font-size: 2.8rem;
+    letter-spacing: 0.15rem;
+  }
+
+  main .help-community .text p {
+    max-width: 85%;
+    font-size: 2rem;
+  }
+  main .art-roast .text h2 {
+    max-width: 100%;
+    font-size: 2.6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  main .art-roast .text p {
+    line-height: 1.6;
+    font-size: 2.1rem;
+    max-width: 95%;
+  }
+  main .nitro-cold-brew .text h2 {
+    max-width: 100%;
+    font-size: 2.6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  main .nitro-cold-brew .text p {
+    line-height: 1.6;
+    font-size: 2.1rem;
+    max-width: 95%;
+  }
+  main .protein-packed .text h2 {
+    max-width: 100%;
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  main .protein-packed .text p {
+    line-height: 1.6;
+    font-size: 1.8rem;
+    max-width: 95%;
+  }
+
+  main .latinx-heritage .text h2 {
+    max-width: 100%;
+    font-size: 2.2rem;
+    letter-spacing: 0rem;
+  }
+
+  main .latinx-heritage .text p {
+    line-height: 1.6;
+    font-size: 1.6rem;
+    max-width: 95%;
+  }
+
+  footer .footer {
+    gap: 3rem;
+  }
+
+  footer .footer .important-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.25rem;
+  }
+
+  footer .footer .important-links .divisor {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  header nav ul {
+    gap: 1.5rem;
+  }
+
+  header nav ul li a {
+    font-size: 1.4rem;
+  }
+
+  header .actions .find-store {
+    margin-right: 2rem;
+  }
+
+  header .actions .sign-in {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+
+  header .actions .join-now {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body.hidden {
+    overflow: hidden;
+  }
+
+  footer nav ul i {
+    display: flex !important;
+  }
+
+  header {
+    z-index: 9;
+  }
+
+  header .overlay {
+    z-index: 8;
+    display: block;
+    position: fixed;
+    top: 10.2rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.15s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  header.open .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  header nav .nav-links,
+  header .actions {
+    display: none;
+  }
+
+  header .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 10;
+    width: 3rem;
+    height: 2rem;
+    position: relative;
+  }
+
+  header .hamburger .line {
+    width: 100%;
+    height: 2px;
+    background: #222;
+    transition: 0.15s ease;
+  }
+
+  header.open .hamburger .line:nth-child(1) {
+    position: absolute;
+    top: 1rem;
+    transform: rotateZ(-45deg);
+  }
+
+  header.open .hamburger .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  header.open .hamburger .line:nth-child(3) {
+    position: absolute;
+    top: 1rem;
+    transform: rotateZ(45deg);
+  }
+
+  header .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: -100%;
+    transition: 0.25s ease-out;
+    width: 80vw;
+    top: 10.2rem;
+    z-index: 11;
+    background: #fff;
+    height: 100vh;
+  }
+
+  header.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    padding-top: 3.5rem;
+    padding-left: 3.5rem;
+  }
+
+  header.open .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-right: 3rem;
+  }
+
+  header.open .mobile-menu ul li a {
+    color: #222;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-size: 2.4rem;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  header.open .mobile-menu ul li a:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header.open .mobile-menu .divisor {
+    width: 100%;
+    height: 1px;
+    margin: 4rem 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  header .mobile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  header .mobile-actions .find-store {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 3.75rem;
+  }
+
+  header .mobile-actions .find-store i {
+    font-size: 2.4rem;
+  }
+
+  header .mobile-actions .sign-in {
+    background: transparent;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0.75rem 1.75rem;
+    cursor: pointer;
+    border-radius: 50rem;
+    transition: 0.15s ease;
+    border: 1px solid #000;
+    margin-right: 2.5rem;
+  }
+
+  header .mobile-actions .sign-in:hover {
+    background: #dfdfdf;
+  }
+
+  header .mobile-actions .join-now {
+    background: #000;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0.75rem 1.75rem;
+    cursor: pointer;
+    border-radius: 50rem;
+    transition: 0.15s ease;
+    border: 0;
+  }
+
+  header .actions .join-now:hover {
+    background: #555;
+  }
+
+  main section {
+    flex-direction: column;
+  }
+
+  main section img {
+    width: 100%;
+  }
+
+  main section:nth-child(2),
+  main section:nth-child(4),
+  main section:nth-child(6) {
+    flex-direction: column-reverse;
+  }
+
+  main section .text {
+    max-width: 100%;
+    padding: 2rem;
+    line-height: 1;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  main .starbucks-rewards .text {
+    gap: 2rem;
+  }
+
+  main .starbucks-rewards .text p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  main .art-roast .text {
+    margin-top: 0;
+  }
+
+  main .nitro-cold-brew .text {
+    margin-top: 0;
+  }
+
+  main .protein-packed .text {
+    margin-top: 0;
+  }
+
+  main .latinx-heritage .text {
+    margin-top: 0;
+  }
+
+  footer nav {
+    flex-direction: column;
+    padding: 5rem 2rem;
+    gap: 3.5rem;
+  }
+
+  footer nav ul:nth-child(1),
+  footer nav ul:nth-child(2),
+  footer nav ul:nth-child(3),
+  footer nav ul:nth-child(4),
+  footer nav ul:nth-child(5) {
+    margin-right: 0;
+  }
+
+  footer nav ul p {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  footer nav ul span {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 0;
+    transition: 0.35s ease;
+  }
+
+  footer nav ul.show span {
+    max-height: 20rem;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  footer nav ul li {
+    max-width: 100%;
+  }
+
+  footer nav ul i {
+    transition: 0.15s ease;
+    font-size: 2.4rem;
+    color: #222;
+  }
+
+  footer nav ul.show i {
+    transform: rotateZ(180deg);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  footer .footer .social-media {
+    margin-left: 0;
+  }
+
+  footer .footer .social-media .social-media-link {
+    padding: 0.5rem;
+  }
+
+  footer .footer ul li a {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+  }
+
+  footer .footer p {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
 }

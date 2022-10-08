@@ -20,11 +20,13 @@
   </head>
   <body>
     <header>
+      <div class="overlay"></div>
+
       <nav>
         <a href="/" class="logo">
           <img src="./images/logo.svg" alt="Starbucks Logo" />
         </a>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#">MENU</a></li>
           <li><a href="#">REWARDS</a></li>
           <li>
@@ -40,6 +42,33 @@
         </a>
         <button class="sign-in">Sign in</button>
         <button class="join-now">Join now</button>
+      </div>
+
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+          <li>
+            <a href="#">Menu <i class="ph-caret-right"></i></a>
+          </li>
+          <li><a href="#">Rewards</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+        <div class="divisor"></div>
+        <div class="mobile-actions">
+          <div class="sign-in__join-now">
+            <button class="sign-in">Sign in</button>
+            <button class="join-now">Join now</button>
+          </div>
+          <a class="find-store" href="#">
+            <i class="ph-map-pin-fill"></i>
+            Find a store
+          </a>
+        </div>
       </div>
     </header>
 
@@ -139,43 +168,55 @@
     <footer>
       <nav>
         <ul>
-          <p>About Us</p>
-          <li><a href="#">Our Company</a></li>
-          <li><a href="#">Our Coffee</a></li>
-          <li><a href="#">Stories and News</a></li>
-          <li><a href="#">Starbucks Archive</a></li>
-          <li><a href="#">Investor Relations</a></li>
-          <li><a href="#">Customer Service</a></li>
+          <p>About Us <i class="ph-caret-down"></i></p>
+          <span
+            ><li><a href="#">Our Company</a></li>
+            <li><a href="#">Our Coffee</a></li>
+            <li><a href="#">Stories and News</a></li>
+            <li><a href="#">Starbucks Archive</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Customer Service</a></li></span
+          >
         </ul>
         <ul>
-          <p>Careers</p>
-          <li><a href="#">Culture and Values</a></li>
-          <li><a href="#">Inclusion, Diversity, and Equity</a></li>
-          <li><a href="#">College Achievement Plan</a></li>
-          <li><a href="#">Alumni Community</a></li>
-          <li><a href="#">U.S. Careers</a></li>
-          <li><a href="#">International Careers</a></li>
+          <p>Careers <i class="ph-caret-down"></i></p>
+          <span
+            ><li><a href="#">Culture and Values</a></li>
+            <li><a href="#">Inclusion, Diversity, and Equity</a></li>
+            <li><a href="#">College Achievement Plan</a></li>
+            <li><a href="#">Alumni Community</a></li>
+            <li><a href="#">U.S. Careers</a></li>
+            <li><a href="#">International Careers</a></li></span
+          >
         </ul>
         <ul>
-          <p>Social Impact</p>
-          <li><a href="#">People</a></li>
-          <li><a href="#">Planet</a></li>
-          <li><a href="#">Environmental and Social Impact Reporting</a></li>
+          <p>Social Impact <i class="ph-caret-down"></i></p>
+          <span
+            ><li><a href="#">People</a></li>
+            <li><a href="#">Planet</a></li>
+            <li>
+              <a href="#">Environmental and Social Impact Reporting</a>
+            </li></span
+          >
         </ul>
         <ul>
-          <p>For Business Partners</p>
-          <li><a href="#">Landlord Support Center</a></li>
-          <li><a href="#">Corporate Gift Card Sales</a></li>
-          <li><a href="#">Suppliers</a></li>
-          <li><a href="#">Office and Foodservice Coffee</a></li>
+          <p>For Business Partners <i class="ph-caret-down"></i></p>
+          <span
+            ><li><a href="#">Landlord Support Center</a></li>
+            <li><a href="#">Corporate Gift Card Sales</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Office and Foodservice Coffee</a></li></span
+          >
         </ul>
         <ul>
-          <p>Order and Pickup</p>
-          <li><a href="#">Order on the App</a></li>
-          <li><a href="#">Order on the Web</a></li>
-          <li><a href="#">Delivery</a></li>
-          <li><a href="#">Order and Pickup Options</a></li>
-          <li><a href="#">Explore and Find Coffee for Home</a></li>
+          <p>Order and Pickup <i class="ph-caret-down"></i></p>
+          <span
+            ><li><a href="#">Order on the App</a></li>
+            <li><a href="#">Order on the Web</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Order and Pickup Options</a></li>
+            <li><a href="#">Explore and Find Coffee for Home</a></li></span
+          >
         </ul>
       </nav>
       <div class="footer">
@@ -223,5 +264,8 @@
         <p>&copy; 2022 Starbucks Coffee Company. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="./menu.js"></script>
+    <script src="./footer.js"></script>
   </body>
 </html>
