@@ -1,9 +1,11 @@
-# NAME OF THE PROJECT
+# Starbucks
 
 ## ✉ About
 
 A completely responsive clone of the official website of the Starbucks company.
 Made with HTML, CSS and JavaScript.
+
+⚠ IMPORTANT: This project was made for educational purposes only. All rights are reserved to Starbucks. ⚠
 
 ## 🌆 Images
 
